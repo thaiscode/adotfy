@@ -12,13 +12,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/d78d4dbd16.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header class="header">
         <nav class="header__nav flex">
             <div class="header__nav-logo flex">
-                <img src="" alt="">
-                <h3>Adotfy</h3>
+                <img src="./assets/imagens/logo - nav.png" alt="">
             </div>
             <ul class="header__nav-menu flex">
                 <li><a href="#sobre">Sobre</a></li>
@@ -44,34 +46,148 @@
     </header>
     <main>
         <section class="main__quantitativo flex">
-            <div class="main__quantitativo-item">
+            <div class="main__quantitativo-item flex">
                 <h3>+10</h3>
                 <p>ONGs cadastradas</p>
             </div>
 
-            <div class="main__quantitativo-item">
+            <div class="main__quantitativo-item flex">
                 <h3>+50</h3>
                 <p>Pets disponíveis</p>
             </div>
 
-            <div class="main__quantitativo-item">
+            <div class="main__quantitativo-item flex">
                 <h3>30</h3>
                 <p>Lares preenchidos</p>
             </div>
 
         </section>
 
-        <section>
+        <section class="main__ponte">
             <h2>A Adotfy faz a ponte  entre você e a ONG mais próxima</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius iusto consectetur architecto, vero dolorum tempore ea quasi dolores eaque omnis quis, magni voluptatem doloribus ab quia et libero, magnam optio.</p>
-            <div>
+            <div class="main__ponte-box flex">
                 <div>
-                    <img src="" alt="">
-                    <h3></h3>
-                    <p></p>
+                    <i class="fa-solid fa-users fa-2xl icon"></i>
+                    <h3>ONGs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-paw fa-2xl icon"></i>
+                    <h3>Adotfy</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-person-dress fa-2xl icon"></i>
+                    <h3>Interessados em adoção</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
             <button>Saiba mais</button>
+        </section>
+
+        <section class="main__pets">
+            <h2>Conheça nossos pets</h2>
+
+            <div class="pets__box flex">
+                <div class="pets__card flex">
+                    <img src="./assets/imagens/image 3.png" alt="">
+                    <div class="pets__card-text flex">
+                        <p>Nome: <span></span></p>
+                        <p>Idade: <span></span></p>
+                        <p>Localização: <span></span></p>
+                    </div>
+                    <button>Adotar</button>
+                </div>
+
+                <div class="pets__card flex">
+                    <img src="./assets/imagens/image 3.png" alt="">
+                    <div class="pets__card-text flex">
+                        <p>Nome: <span></span></p>
+                        <p>Idade: <span></span></p>
+                        <p>Localização: <span></span></p>
+                    </div>
+                    <button>Adotar</button>
+                </div>
+
+                <div class="pets__card flex">
+                    <img src="./assets/imagens/image 3.png" alt="">
+                    <div class="pets__card-text flex">
+                        <p>Nome: <span></span></p>
+                        <p>Idade: <span></span></p>
+                        <p>Localização: <span></span></p>
+                    </div>
+                    <button>Adotar</button>
+                </div>
+
+                <div class="pets__card flex">
+                    <img src="./assets/imagens/image 3.png" alt="">
+                    <div class="pets__card-text flex">
+                        <p>Nome: <span></span></p>
+                        <p>Idade: <span></span></p>
+                        <p>Localização: <span></span></p>
+                    </div>
+                    <button>Adotar</button>
+                </div>
+            </div>
+
+            <button>Veja mais</button>
+        </section>
+
+        <section class="main__ong">
+            <h2>Nossas ONGs parceiras</h2>
+            <p>Atualmente contamos com 3 ONGs associadas. Quer fazer parte do nosso time?</p>
+            <button>Cadastrar ONG</button>
+
+            <div class="ong__box flex">
+                <div class="ong__card">
+                    <img src="./assets/imagens/ONG (1).png" alt="">
+                    <h4>ONG</h4>
+                </div>
+                <div class="ong__card">
+                    <img src="./assets/imagens/ONG (2).png" alt="">
+                    <h4>ONG</h4>
+                </div>
+                <div class="ong__card">
+                    <img src="./assets/imagens/ONG (3).png" alt="">
+                    <h4>ONG</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__adocao">
+            <h2>Adote em poucos passos</h2>
+            <div class="adocao__box flex">
+                <img src="./assets/imagens/Pets (3).jpg" alt="">
+                <div class="adocao__passos">
+                    <div class="flex">
+                        <i class="fa-solid fa-pen fa-lg icon icon2"></i>
+                        <div>
+                            <h4>Faça seu cadastro</h4>
+                            <p>É simples e rápido se cadastrar no nosso site.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="flex">
+                        <i class="fa-solid fa-location-dot fa-lg icon icon2"></i>
+                        <div>
+                            <h4>Encontre o PET mais próximo</h4>
+                            <p>Vários amiguinhos esperando por um lar.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="flex">
+                         <i class="fa-solid fa-users fa-lg icon icon2"></i>
+                         <div>
+                            <h4>A ONG de portas abertas a te esperar!</h4>
+                            <p>É só combinar o dia do resgate.</p>
+                         </div>
+                        
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

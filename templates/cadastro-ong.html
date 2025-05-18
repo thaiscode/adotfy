@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block estilo %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='cadastro-ong.css') }}">
+{% endblock %}
+
+{% block conteudo %}
+<main>
+    <section class="main__ong">
+        <h2>Nossas ONGs parceiras</h2>
+
+        <div class="ong__box flex">
+            <div class="ong__card">
+                <img src="{{ url_for('static', filename='images/ONG (1).png') }}" alt=""> 
+                <h4>ONG</h4>
+            </div>
+            <div class="ong__card">
+                <img src="{{ url_for('static', filename='images/ONG (2).png') }}" alt="">
+                <h4>ONG</h4>
+            </div>
+            <div class="ong__card">
+                <img src="{{ url_for('static', filename='images/ONG (3).png') }}" alt=""> 
+                <h4>ONG</h4>
+            </div>
+        </div>
+    </section>
+
+    <h2>
+        Se interessou pelo nosso projeto e tem uma ONG pra cadastrar?
+    </h2>
+
+    <div class="main flex">
+        <div class="img">
+            <img src="{{ url_for('static', filename='images/Pets (6).jpg') }}" alt="">
+        </div>
+            
+        <div class="form flex">
+            <form action="" class="flex">
+                <label for="nome">
+                    Nome fantasia: <input type="text" id="nome" name="nome_fantasia">
+                </label>
+
+                <label for="cnpj">
+                    CNPJ:<input type="text" name="cnpj" id="cnpj">
+                </label>
+
+                <label for="email">
+                    Email:<input type="email" name="email" id="email">
+                </label>
+
+                <label for="telefone">
+                    Telefone:<input type="number" name="telefone" id="telefone">
+                </label>
+                <label for="endereço">
+                    Endereço:<input type="text" name="endereço" id="endereço">
+                </label>
+
+                <button class="enviar">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="mensagem-envio">
+        <h2>ONG cadastrada com sucesso!</h2>
+        <p>Você já pode cadastrar seus pets disponíveis para adoção.</p>
+    </div>
+    
+    <script src="script2.js"></script>
+</main>
+{% endblock %}

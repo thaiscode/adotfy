@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+
+{% block estilo %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='pets.css') }}">
+{% endblock %}
+
+{% block conteudo %}
+<main>
+    <section class="main__pets">
+       <h2>Confira a lista de pets disponíveis para adoção.</h2>
+
+       <div class="pets__box flex">
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 3.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 5.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 1.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 3.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 5.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 1.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 3.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 5.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+              <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 1.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 3.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 5.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span></span></p>
+                   <p>Idade: <span></span></p>
+                   <p>Localização: <span></span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+       </div>
+
+
+   </section>
+</main>
+{% endblock %}

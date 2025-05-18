@@ -1,0 +1,25 @@
+main {
+    margin: 1rem;
+}
+
+.form, .mensagem-envio{
+    background-color: var(--green-gray);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.mensagem-envio {
+    display: none;
+    width: 330px;
+    padding: 1rem;
+    color: var(--off-white);
+}
+
+.mensagem-envio h2 {
+    padding-bottom: 1rem;
+    margin: unset;
+}
+
+.mensagem-envio p {
+    text-align: center;
+}

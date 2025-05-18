@@ -1,0 +1,9 @@
+.main__pets {
+    margin: unset;
+    padding: 3rem 0;
+    background-color: unset;
+}
+
+.pets__card {
+    margin: 1rem;
+}

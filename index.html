@@ -18,25 +18,13 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav flex">
-            <div class="header__nav-logo flex">
-                <img src="./assets/imagens/logo - nav.png" alt="">
-            </div>
-            <ul class="header__nav-menu flex">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#ongs">ONGs</a></li>
-                <li><a href="#pets">Pets</a></li>
-                <button>Cadastro</button>
-                <button>Login</button>
-            </ul>
-            
-        </nav>
+        <iframe src="./nav.html" frameborder="0" width="100%"></iframe>
 
         <div class="header__banner flex">
             <section class="header__banner-text flex">
                 <h3>Adoção responsável</h3>
                 <h1>Adotfy. O jeito mais consciente de encontrar o seu novo amigo.</h1>
-                <button>Buscar Pet</button>
+                <button><a href="./pets.html">Buscar Pet</a></button>
             </section>
 
             <div class="header__banner-img flex">
@@ -52,7 +40,7 @@
             </div>
 
             <div class="main__quantitativo-item flex">
-                <h3>+50</h3>
+                <h3>+12</h3>
                 <p>Pets disponíveis</p>
             </div>
 
@@ -83,7 +71,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <button>Saiba mais</button>
+            <button><a href="./sobre.html">Saiba mais</a></button>
         </section>
 
         <section class="main__pets">
@@ -97,47 +85,47 @@
                         <p>Idade: <span></span></p>
                         <p>Localização: <span></span></p>
                     </div>
-                    <button>Adotar</button>
+                    <button><a href="./formulario.html" class="enviar">Adotar</a></button>
                 </div>
 
                 <div class="pets__card flex">
-                    <img src="./assets/imagens/image 3.png" alt="">
+                    <img src="./assets/imagens/image 5.png" alt="">
                     <div class="pets__card-text flex">
                         <p>Nome: <span></span></p>
                         <p>Idade: <span></span></p>
                         <p>Localização: <span></span></p>
                     </div>
-                    <button>Adotar</button>
+                    <button><a href="./formulario.html" class="enviar">Adotar</a></button>
                 </div>
 
                 <div class="pets__card flex">
-                    <img src="./assets/imagens/image 3.png" alt="">
+                    <img src="./assets/imagens/image.png" alt="">
                     <div class="pets__card-text flex">
                         <p>Nome: <span></span></p>
                         <p>Idade: <span></span></p>
                         <p>Localização: <span></span></p>
                     </div>
-                    <button>Adotar</button>
+                    <button><a href="./formulario.html" class="enviar">Adotar</a></button>
                 </div>
 
                 <div class="pets__card flex">
-                    <img src="./assets/imagens/image 3.png" alt="">
+                    <img src="./assets/imagens/image 1.png" alt="">
                     <div class="pets__card-text flex">
                         <p>Nome: <span></span></p>
                         <p>Idade: <span></span></p>
                         <p>Localização: <span></span></p>
                     </div>
-                    <button>Adotar</button>
+                    <button><a href="./formulario.html" class="enviar">Adotar</a></button>
                 </div>
             </div>
 
-            <button>Veja mais</button>
+            <button><a href="./pets.html">Veja mais</a></button>
         </section>
 
         <section class="main__ong">
             <h2>Nossas ONGs parceiras</h2>
             <p>Atualmente contamos com 3 ONGs associadas. Quer fazer parte do nosso time?</p>
-            <button>Cadastrar ONG</button>
+            <button><a href="./cadastro-ong.html">Cadastrar ONG</a></button>
 
             <div class="ong__box flex">
                 <div class="ong__card">
@@ -161,15 +149,6 @@
                 <img src="./assets/imagens/Pets (3).jpg" alt="">
                 <div class="adocao__passos">
                     <div class="flex">
-                        <i class="fa-solid fa-pen fa-lg icon icon2"></i>
-                        <div>
-                            <h4>Faça seu cadastro</h4>
-                            <p>É simples e rápido se cadastrar no nosso site.</p>
-                        </div>
-                        
-                    </div>
-
-                    <div class="flex">
                         <i class="fa-solid fa-location-dot fa-lg icon icon2"></i>
                         <div>
                             <h4>Encontre o PET mais próximo</h4>
@@ -179,10 +158,19 @@
                     </div>
 
                     <div class="flex">
+                        <i class="fa-solid fa-pen fa-lg icon icon2"></i>
+                        <div>
+                            <h4>Preencha o formulário</h4>
+                            <p>É simples e rápido, nós só precisamos de algumas informações.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="flex">
                          <i class="fa-solid fa-users fa-lg icon icon2"></i>
                          <div>
                             <h4>A ONG de portas abertas a te esperar!</h4>
-                            <p>É só combinar o dia do resgate.</p>
+                            <p>É só esperar a ONG entrar em contato para combinar o dia do resgate.</p>
                          </div>
                         
                     </div>
@@ -190,5 +178,9 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <iframe src="./footer.html" frameborder="0" ></iframe>
+    </footer>
 </body>
 </html>

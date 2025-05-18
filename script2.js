@@ -1,5 +1,5 @@
-let send = document.querySelector('.form');
 let msg = document.querySelector('.mensagem-envio');
+let send2 = document.querySelector('.main')
 let btn = document.querySelector('.enviar');
 
 btn.addEventListener('click', envio);

@@ -3,7 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --off-white:hsl(51, 88%, 87%) ;
+    --bg-white:hsla(52, 58%, 87%, 0.356) ;
+    --cor: #F7F7CC;
+    --green: hsl(60, 18%, 22%);
+    --green-gray: #A3A37B;
+    --nav-green-gray: #e4e4ae7e;
+} 
+
 img {
     max-width: 100%; 
     height: auto;
@@ -20,11 +31,6 @@ body {
     margin: 0 auto;
 }
   
-:root {
-    --white: hsl(0, 0%, 100%);
-    --black: hsl(0, 0%, 0%);
-}
-
 h1 {
     font-size: 3rem;
     padding: 0.3rem 0 1rem 0;
@@ -35,16 +41,18 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    color: var(--green);
 }
 
 h3 {
     font-weight: 600;
     font-size: 0.9rem;
-
+    color: var(--green);
 }
 
 h4 {
     font-size: 1rem;
+    color: var(--green);
 }
 
 p {
@@ -54,9 +62,14 @@ p {
 }
 
 a {
+    color: var(--off-white);
     text-decoration: none;
-    color: var(--black);
     cursor: pointer;
+    font-weight: 600;
+}
+
+nav a {
+    color: var(--green);
 }
 
 .flex {
@@ -68,7 +81,8 @@ a {
 .header__nav {
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 0 4rem;
+    background-color: var(--nav-green-gray);
 }
 
 .header__nav-logo {
@@ -106,12 +120,10 @@ li {
 }
 
 .header__nav-menu button {
-    
     border: inherit;
     width: 100px;
     height: 30px;
     margin-top: inherit;
-    border-radius: 5px;
     margin-right: 0.5rem;
 }
 
@@ -120,24 +132,27 @@ li {
 }
 
  button {
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--off-white);
+    background-color: var(--green);
     border: none;
     width: 150px;
     height: 50px;
     border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .main__quantitativo {
     padding: 5rem 0;
     justify-content: space-evenly;
+    background-color: var(--bg-white);
 }
 
 .main__quantitativo-item {
     width: 150px;
     height: 150px;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--green-gray);
+    color: var(--black);
     text-align: center;
     border-radius: 15px;
     flex-direction: column;
@@ -151,6 +166,7 @@ li {
 
 .main__ponte {
     text-align: center;
+    padding: 3rem 0;
 }
 
 .main__ponte p{
@@ -170,7 +186,7 @@ li {
 }
 
 .icon {
-    background-color: grey;
+    background-color: var(--green-gray);
     padding: 1rem;
     border-radius: 5px;
 }
@@ -185,8 +201,9 @@ li {
 }
 
 .main__pets {
-    margin: 3rem 0;
+    padding: 3rem 0;
     text-align: center;
+    background-color: var(--bg-white);
 }
 
 .pets__box {
@@ -200,11 +217,10 @@ li {
     justify-content: center;
     flex-wrap: nowrap;
     width: 200px;
-    height: 250px;
+    height: 260px;
     padding: 1rem;
-    background-color: grey;
+    background-color: var(--green-gray);
     border-radius: 10px;
-    
 }
 
 .pets__card-text {

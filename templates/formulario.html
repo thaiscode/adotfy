@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block estilo %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/cadastro-ong.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/formulario.css') }}">
+{% endblock %}
+
+{% block conteudo %}
+<main>
+    <div class="form flex">
+        <form action="" class="flex">
+            <label for="nome">
+                Nome completo: <input type="text" id="nome" name="nome">
+            </label>
+
+            <label for="cpf">
+                CPF:<input type="text" name="cpf" id="cpf">
+            </label>
+
+            <label for="email">
+                Email:<input type="email" name="email" id="email">
+            </label>
+
+            <label for="telefone">
+                Telefone:<input type="text" name="telefone" id="telefone">
+            </label>
+            <label for="endereço">
+                Endereço:<input type="text" name="endereço" id="endereço">
+            </label>
+
+            <button class="enviar">Enviar</button>
+        </form>
+    </div>
+
+    <div class="mensagem-envio">
+        <h2>Formulário enviado com sucesso!</h2>
+        <p>Enquanto aguarda o contato da ONG você já pode arrumar o cantinho do seu pet :D </p>
+    </div>
+</main>
+
+<script src="{{ url_for('static', filename='javascript/script.js') }}"></script> 
+{% endblock %}

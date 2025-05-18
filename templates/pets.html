@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+
+{% block estilo %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/pets.css') }}">
+{% endblock %}
+
+{% block conteudo %}
+<main>
+    <section class="main__pets">
+       <h2>Confira a lista de pets disponíveis para adoção.</h2>
+
+       <div class="pets__box flex">
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 3.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[0].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[0].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[0].doante.cidade}}, {{lista[0].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 5.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[1].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[1].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[1].doante.cidade}}, {{lista[1].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[2].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[2].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[2].doante.cidade}}, {{lista[2].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 1.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[3].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[3].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[3].doante.cidade}}, {{lista[3].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 3.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[4].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[4].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[4].doante.cidade}}, {{lista[4].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 5.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[5].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[5].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[5].doante.cidade}}, {{lista[5].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[6].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[6].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[6].doante.cidade}}, {{lista[6].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 1.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[7].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[7].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[7].doante.cidade}}, {{lista[7].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 3.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[8].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[8].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[8].doante.cidade}}, {{lista[8].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 5.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[9].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[9].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[9].doante.cidade}}, {{lista[9].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[10].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[10].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[10].doante.cidade}}, {{lista[10].doante.estado}} </span></p>
+               </div>
+              <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 1.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[11].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[11].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[11].doante.cidade}}, {{lista[11].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 3.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[12].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[12].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[12].doante.cidade}}, {{lista[12].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image 5.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[13].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[13].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[13].doante.cidade}}, {{lista[13].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+
+           <div class="pets__card flex">
+               <img src="{{ url_for('static', filename='images/image.png') }}" alt="">
+               <div class="pets__card-text flex">
+                   <p>Nome: <span> {{lista[14].animal.nome}} </span></p>
+                   <p>Idade: <span> {{lista[14].animal.idade}} </span></p>
+                   <p>Localização: <span> {{lista[14].doante.cidade}}, {{lista[14].doante.estado}} </span></p>
+               </div>
+               <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+           </div>
+       </div>
+
+   </section>
+</main>
+{% endblock %}

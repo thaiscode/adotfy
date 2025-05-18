@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adotfy</title>
+
+    {% block estilo %}
+    {% endblock %}
+
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav flex">
+            <div class="header__nav-logo flex">
+                <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo - nav.png') }}" alt="logo-nav"></a>
+            </div>
+            <ul class="header__nav-menu flex">
+                <li><a href="{{ url_for('rota_sobre') }}">A Adotfy</a></li>
+                <li><a href="{{ url_for('rota_cadastro') }}">Sobre ONGs</a></li>
+                <li><a href="{{ url_for('rota_pets') }}">Buscar Pets</a></li>
+            </ul>    
+        </nav>
+    </header>
+
+    {% block conteudo %}
+    {% endblock %}
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+
+{% block estilo %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<!--{{ url_for('static', filename='style.css') }}-->
+
+<!--Font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!--Fontawesome-->
+<script src="https://kit.fontawesome.com/d78d4dbd16.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block conteudo %}
+<main>
+    <div class="header__banner flex">
+        <section class="header__banner-text flex">
+            <h3>Adoção responsável</h3>
+            <h1>Adotfy. O jeito mais consciente de encontrar o seu novo amigo.</h1>
+            <button><a href="{{ url_for('rota_pets') }}">Buscar Pet</a></button>
+        </section>
+
+        <div class="header__banner-img flex">
+            <img src="{{ url_for('static', filename='images/Pets (5).jpg') }}" alt="">
+        </div>
+    </div>
+    <section class="main__quantitativo flex">
+        <div class="main__quantitativo-item flex">
+            <h3>+10</h3>
+            <p>ONGs cadastradas</p>
+        </div>
+
+        <div class="main__quantitativo-item flex">
+            <h3>+12</h3>
+            <p>Pets disponíveis</p>
+        </div>
+
+        <div class="main__quantitativo-item flex">
+            <h3>30</h3>
+            <p>Lares preenchidos</p>
+        </div>
+
+    </section>
+
+    <section class="main__ponte">
+        <h2>A Adotfy faz a ponte  entre você e a ONG mais próxima</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius iusto consectetur architecto, vero dolorum tempore ea quasi dolores eaque omnis quis, magni voluptatem doloribus ab quia et libero, magnam optio.</p>
+        <div class="main__ponte-box flex">
+            <div>
+                <i class="fa-solid fa-users fa-2xl icon"></i>
+                <h3>ONGs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-paw fa-2xl icon"></i>
+                <h3>Adotfy</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-person-dress fa-2xl icon"></i>
+                <h3>Interessados em adoção</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <button><a href="{{ url_for('rota_sobre') }}">Saiba mais</a></button>
+    </section>
+
+    <section class="main__pets">
+        <h2>Conheça nossos pets</h2>
+
+        <div class="pets__box flex">
+            <div class="pets__card flex">
+                <img src="{{ url_for('static', filename='images/image 3.png') }}" alt="">
+                <div class="pets__card-text flex">
+                    <p>Nome: <span> {{lista[0].animal.nome}} </span></p>
+                    <p>Idade: <span> {{lista[0].animal.idade}} </span></p>
+                    <p>Localização: <span> {{lista[0].doante.cidade}}, {{lista[0].doante.estado}} </span></p>
+                </div>
+                <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+            </div>
+
+            <div class="pets__card flex">
+                <img src="{{ url_for('static', filename='images/image 5.png') }}" alt="">
+                <div class="pets__card-text flex">
+                    <p>Nome: <span> {{lista[1].animal.nome}} </span></p>
+                    <p>Idade: <span> {{lista[1].animal.idade}} </span></p>
+                    <p>Localização: <span> {{lista[1].doante.cidade}}, {{lista[1].doante.estado}} </span></p>
+                </div>
+                <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+            </div>
+
+            <div class="pets__card flex">
+                <img src="{{ url_for('static', filename='images/image.png') }}" alt="">
+                <div class="pets__card-text flex">
+                    <p>Nome: <span> {{lista[2].animal.nome}} </span></p>
+                    <p>Idade: <span> {{lista[2].animal.idade}} </span></p>
+                    <p>Localização: <span> {{lista[2].doante.cidade}}, {{lista[2].doante.estado}} </span></p>
+                </div>
+                <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+            </div>
+
+            <div class="pets__card flex">
+                <img src="{{ url_for('static', filename='images/image 1.png') }}" alt="">
+                <div class="pets__card-text flex">
+                    <p>Nome: <span> {{lista[3].animal.nome}} </span></p>
+                    <p>Idade: <span> {{lista[3].animal.idade}} </span></p>
+                    <p>Localização: <span> {{lista[3].doante.cidade}}, {{lista[3].doante.estado}} </span></p>
+                </div>
+                <button><a href="{{ url_for('rota_formulario') }}" class="enviar">Adotar</a></button>
+            </div>
+        </div>
+
+        <button><a href="{{ url_for('rota_pets') }}">Veja mais</a></button>
+    </section>
+
+    <section class="main__ong">
+        <h2>Nossas ONGs parceiras</h2>
+        <p>Atualmente contamos com 3 ONGs associadas. Quer fazer parte do nosso time?</p>
+        <button><a href="{{ url_for('rota_cadastro') }}">Cadastrar ONG</a></button>
+
+        <div class="ong__box flex">
+            <div class="ong__card">
+                <img src="{{ url_for('static', filename='images/ONG (1).png') }}" alt="">
+                <h4>ONG</h4>
+            </div>
+            <div class="ong__card">
+                <img src="{{ url_for('static', filename='images/ONG (2).png') }}" alt="">
+                <h4>ONG</h4>
+            </div>
+            <div class="ong__card">
+                <img src="{{ url_for('static', filename='images/ONG (2).png') }}" alt="">
+                <h4>ONG</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__adocao">
+        <h2>Adote em poucos passos</h2>
+        <div class="adocao__box flex">
+            <img src="{{ url_for('static', filename='images/Pets (3).png') }}" alt="">
+            <div class="adocao__passos">
+                <div class="flex">
+                    <i class="fa-solid fa-location-dot fa-lg icon icon2"></i>
+                    <div>
+                        <h4>Encontre o PET mais próximo</h4>
+                        <p>Vários amiguinhos esperando por um lar.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="flex">
+                    <i class="fa-solid fa-pen fa-lg icon icon2"></i>
+                    <div>
+                        <h4>Preencha o formulário</h4>
+                        <p>É simples e rápido, nós só precisamos de algumas informações.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="flex">
+                     <i class="fa-solid fa-users fa-lg icon icon2"></i>
+                     <div>
+                        <h4>A ONG de portas abertas a te esperar!</h4>
+                        <p>É só esperar a ONG entrar em contato para combinar o dia do resgate.</p>
+                     </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}

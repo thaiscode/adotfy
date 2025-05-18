@@ -1,14 +1,20 @@
 from flask import Flask, render_template, url_for
+from models.queryFunctions import buscarAnimais
+
 app = Flask(__name__)
 
 @app.route('/')
 @app.route('/index')
 def index():
-   return render_template('index.html')
+   listaDeAdocao = buscarAnimais()
+
+   return render_template('index.html', lista = listaDeAdocao)
 
 @app.route('/pets')
 def rota_pets():
-   return render_template('pets.html')
+   listaDeAdocao = buscarAnimais()
+
+   return render_template('pets.html', lista = listaDeAdocao)
 
 @app.route('/sobre-adotfy')
 def rota_sobre():
@@ -24,16 +30,3 @@ def rota_formulario():
 
 if __name__ == '__main__':
    app.run(debug = True)
-
-"""
-@app.route('/quero-adotar')
-def quero_adotar():
-    listaDeAdocao = buscarNomesAnimais()
-    
-    return render_template('quero-adotar.html', lista = listaDeAdocao)
-
-@app.route('/info-animal/<int:idAnimal>')
-def info_do_animal(idAnimal):
-    informacoesAdocao = infoAnimal(idAnimal)
-    return render_template('info-animal.html', info = informacoesAdocao)
-"""

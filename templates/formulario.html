@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block estilo %}
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='cadastro-ong.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='formulario.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/cadastro-ong.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/formulario.css') }}">
 {% endblock %}
 
 {% block conteudo %}
@@ -39,5 +39,5 @@
     </div>
 </main>
 
-<script src="script.js"></script>
+<script src="{{ url_for('static', filename='javascript/script.js') }}"></script> 
 {% endblock %}

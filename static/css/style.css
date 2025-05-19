@@ -299,7 +299,7 @@ footer {
     justify-content: space-evenly;
     background-color: var(--nav-green-gray);
     padding: 2rem;
-    
+    margin-top: 3rem;
 }
 
 footer h4 {

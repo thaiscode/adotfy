@@ -295,4 +295,36 @@ li {
     text-align: left;
 }
 
+footer {
+    justify-content: space-evenly;
+    background-color: var(--nav-green-gray);
+    padding: 2rem;
+    
+}
+
+footer h4 {
+    font-weight: 600;
+}
+
+footer p {
+    max-width: 200px;
+    font-family: 500;
+}
+
+footer li{
+    padding:  0.5rem 0 0.5rem 0;
+    
+
+}
+
+footer li a {
+    color: var(--black);
+    font-weight: 400;
+}
+
+.social {
+    padding-top: 1rem;
+    color: var(--green);
+    cursor: pointer;
+}
 

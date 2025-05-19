@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <script src="https://kit.fontawesome.com/d78d4dbd16.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <footer class="flex">
+        <div>
+            <img src="../static/images/logo - nav.png" alt="">
+            <p>Fazendo a ponte entre você e a ONG mais próxima.</p>
+            <div class="social">
+                <i class="fa-brands fa-square-facebook fa-lg"></i>
+                <i class="fa-brands fa-square-instagram fa-lg"></i>
+                <i class="fa-brands fa-square-twitter fa-lg"></i> 
+            </div>
+        </div>
+            
+            <div>
+                <ul>
+                    <h4>Sobre</h4>
+                    <li><a href="{{ url_for('rota_sobre') }}">Sobre nós</a></li>
+                    <li><a href="{{ url_for('rota_cadastro') }}">ONGs</a></li>
+                    <li><a href="{{ url_for('rota_pets') }}">Pets</a></li>
+                </ul> 
+            </div>
+        
+
+        </div>
+    </footer>
+</body>
+</html>
